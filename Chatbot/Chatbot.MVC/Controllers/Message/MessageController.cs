@@ -18,7 +18,7 @@ namespace Chatbot.MVC.Controllers.Message
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> SendMessage()
+        public async Task<IActionResult> SendMessage(ChatMessageViewModel model)
         {
             var result = await _httpClient.GetAsync("https://localhost:7144//api/chat/send");
             var json = await result.Content.ReadAsStringAsync();

@@ -22,6 +22,7 @@ namespace Chatbot.Infrastructure
                 .WithParameter("connectionString", _connectionString)
                 .WithParameter("migrationAssembly", _migrationAssembly)
                 .InstancePerLifetimeScope();
+            builder.RegisterType<HttpClient>().AsSelf().InstancePerLifetimeScope();
             base.Load(builder);
         }
     }

@@ -2,6 +2,7 @@
 using Chatbot.Infrastructure.Membership;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,20 @@ namespace Chatbot.Infrastructure
             _connectionString = connectionString;
             _migrationAssembly = migrationAssembly;
         }
-        public ChatMessage ChatMessages { get; set; }
-        public ApplicationUser Users { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(_connectionString,
+                    m => m.MigrationsAssembly(_migrationAssembly));
+            }
+            base.OnConfiguring(optionsBuilder);
+        }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.Entity<ChatMessage>().ToTable("ChatMessages");
+            builder.Entity<ChatMessage>().HasKey(x => x.Id);
+        }
+        public DbSet<ChatMessage> ChatMessages { get; set; }
     }
 }

@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35919.96 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot", "Chatbot\Chatbot.csproj", "{F1F45222-C52B-4EDE-8007-16089DB77549}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.Domain", "Chatbot.Domain\Chatbot.Domain.csproj", "{6FF4E1E2-C1E8-4B49-AA96-7486F5C6A378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.MVC", "Chatbot.MVC\Chatbot.MVC.csproj", "{205DEE81-F283-4B10-BBB1-16C2F457900F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.Infrastructure", "Chatbot.Infrastructure\Chatbot.Infrastructure.csproj", "{C8962487-3688-4AB0-BD5C-542E3D39E27E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chatbot.Application", "Chatbot.Application\Chatbot.Application.csproj", "{804DFA18-B479-4203-8949-BA3A47929E3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F1F45222-C52B-4EDE-8007-16089DB77549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1F45222-C52B-4EDE-8007-16089DB77549}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1F45222-C52B-4EDE-8007-16089DB77549}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1F45222-C52B-4EDE-8007-16089DB77549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF4E1E2-C1E8-4B49-AA96-7486F5C6A378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF4E1E2-C1E8-4B49-AA96-7486F5C6A378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF4E1E2-C1E8-4B49-AA96-7486F5C6A378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF4E1E2-C1E8-4B49-AA96-7486F5C6A378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{205DEE81-F283-4B10-BBB1-16C2F457900F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{205DEE81-F283-4B10-BBB1-16C2F457900F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{205DEE81-F283-4B10-BBB1-16C2F457900F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{205DEE81-F283-4B10-BBB1-16C2F457900F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8962487-3688-4AB0-BD5C-542E3D39E27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8962487-3688-4AB0-BD5C-542E3D39E27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8962487-3688-4AB0-BD5C-542E3D39E27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8962487-3688-4AB0-BD5C-542E3D39E27E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{804DFA18-B479-4203-8949-BA3A47929E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{804DFA18-B479-4203-8949-BA3A47929E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{804DFA18-B479-4203-8949-BA3A47929E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{804DFA18-B479-4203-8949-BA3A47929E3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+﻿@model ChatMessageViewModel
+@{
+    ViewData["Title"] = "Message";
+}
+
+<form asp-action="SendMessage" method="post"> </form>
+<h1>Message</h1>
+<br />
+<label asp-for="Message" />
+<br/>
+<input asp-for="Message"/>
+<br />
+<input type="submit" value="Send" />
+
+

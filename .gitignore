@@ -1,0 +1,15 @@
+﻿
+/Chatbot/.vs
+/Chatbot/bin
+/Chatbot/obj
+/Chatbot/Chatbot.MVC/appsettings.Development.json
+/Chatbot/Chatbot.Domain/bin
+/Chatbot/Chatbot.Domain/obj
+/Chatbot/Chatbot.Application/bin
+/Chatbot/Chatbot.Application/obj
+/Chatbot/Chatbot.Infrustructure/bin
+/Chatbot/Chatbot.Infrustructure/obj
+/Chatbot/Chatbot.MVC/bin
+/Chatbot/Chatbot.MVC/obj
+
+/Chatbot/SmartBudgetManager.WebAPI/Properties/launchSettings.json
